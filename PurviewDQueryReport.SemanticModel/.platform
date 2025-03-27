@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "PurviewDQueryReport"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "f07481d6-d187-bc75-4291-46252bd55f89"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "PurviewSQLImport"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "9c5c9b2a-db6d-87f6-48ce-bc6c943f2f0d"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "config": "{\"version\":\"5.57\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU08\",\"version\":\"5.58\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU08",
+            "path": "BaseThemes/CY24SU08.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "3272e9c56edebe023702",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"a9f49c6f0e752d9d0314\",\"layouts\":[{\"id\":0,\"position\":{\"x\":120.88888888888889,\"y\":79.64444444444445,\"z\":0,\"width\":1093.6888888888889,\"height\":574.5777777777778,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"dwh_dimension_customer.BuyingGroup\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(dwh_dimension_customer.BuyingGroup)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"dwh_dimension_customer\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"BuyingGroup\"},\"Name\":\"dwh_dimension_customer.BuyingGroup\",\"NativeReferenceName\":\"BuyingGroup\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"BuyingGroup\"}},\"Function\":5},\"Name\":\"CountNonNull(dwh_dimension_customer.BuyingGroup)\",\"NativeReferenceName\":\"Count of BuyingGroup\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"BuyingGroup\"}}}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 574.58,
+          "width": 1093.69,
+          "x": 120.89,
+          "y": 79.64,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

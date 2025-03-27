@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "PurviewSQLImport"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "a134bcc8-92eb-8245-4c14-2a3cc74e1225"
+  }
+}

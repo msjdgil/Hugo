@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "PurviewSQLDQ"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "6856e079-2c50-840b-49e4-d9756bf9e4fc"
+  }
+}

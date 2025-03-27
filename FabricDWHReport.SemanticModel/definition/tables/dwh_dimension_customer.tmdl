@@ -1,0 +1,117 @@
+table dwh_dimension_customer
+	lineageTag: f4405d49-18be-474f-bc24-1c8ec3f232a0
+
+	column CustomerKey
+		dataType: int64
+		formatString: 0
+		lineageTag: 8643af2a-53e1-4d51-b830-5144fd48e2ba
+		summarizeBy: count
+		sourceColumn: CustomerKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column WWICustomerID
+		dataType: int64
+		formatString: 0
+		lineageTag: 0ebdeba7-00f9-4667-957c-d272ab7d11fa
+		summarizeBy: count
+		sourceColumn: WWICustomerID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Customer
+		dataType: string
+		lineageTag: 1b7e0d32-8b13-41bd-b92a-fb05aa8c8d02
+		summarizeBy: none
+		sourceColumn: Customer
+
+		annotation SummarizationSetBy = Automatic
+
+	column BillToCustomer
+		dataType: string
+		lineageTag: 2fd64710-805b-4982-855c-b43baf26eb75
+		summarizeBy: none
+		sourceColumn: BillToCustomer
+
+		annotation SummarizationSetBy = Automatic
+
+	column Category
+		dataType: string
+		lineageTag: aa2a06d4-55ae-42fd-8716-a095aca0355c
+		summarizeBy: none
+		sourceColumn: Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column BuyingGroup
+		dataType: string
+		lineageTag: d4b3be40-6248-4e19-8623-ce82f7b48166
+		summarizeBy: none
+		sourceColumn: BuyingGroup
+
+		annotation SummarizationSetBy = Automatic
+
+	column PrimaryContact
+		dataType: string
+		lineageTag: 3d88d829-5769-44d6-ba0b-15c19e817ac9
+		summarizeBy: none
+		sourceColumn: PrimaryContact
+
+		annotation SummarizationSetBy = Automatic
+
+	column PostalCode
+		dataType: string
+		lineageTag: 3ce77aa0-1ddc-45d2-8a0c-06b5a2d40c44
+		summarizeBy: none
+		sourceColumn: PostalCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column ValidFrom
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 10b9b445-e841-4f53-bc83-21f0c255937b
+		summarizeBy: none
+		sourceColumn: ValidFrom
+
+		variation Variation
+			isDefault
+			relationship: 475c2769-6018-4528-b4b6-3ff57fde7109
+			defaultHierarchy: LocalDateTable_64c1e089-32b4-484c-97ea-12bd8d22bacd.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column ValidTo
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: f56804b4-ae22-4f5e-8fa6-94f8b1ef50d6
+		summarizeBy: none
+		sourceColumn: ValidTo
+
+		variation Variation
+			isDefault
+			relationship: 8d8edccd-da9a-41d9-9f6e-138dd14f462b
+			defaultHierarchy: LocalDateTable_beeee406-082d-4b54-9db5-1c627383d75f.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column LineageKey
+		dataType: int64
+		formatString: 0
+		lineageTag: f6f1f536-cf0e-4084-a230-2868637b9b78
+		summarizeBy: count
+		sourceColumn: LineageKey
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dwh_dimension_customer = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("llzb6ciruyrelpbcg5iyfc22yq-zqv2fnaw6r7ufnkt3vf7i6jbvm.datawarehouse.fabric.microsoft.com", "FabricDWH"),
+				    dbo_dwh_dimension_customer = Source{[Schema="dbo",Item="dwh_dimension_customer"]}[Data]
+				in
+				    dbo_dwh_dimension_customer
+
+	annotation PBI_ResultType = Exception
+

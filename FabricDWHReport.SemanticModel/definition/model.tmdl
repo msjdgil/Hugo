@@ -1,0 +1,21 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-DE
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["dwh_dimension_customer"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.136.1202.0 (24.09)
+
+ref table dwh_dimension_customer
+ref table DateTableTemplate_e38e653c-3235-4505-8481-d135fae967bc
+ref table LocalDateTable_64c1e089-32b4-484c-97ea-12bd8d22bacd
+ref table LocalDateTable_beeee406-082d-4b54-9db5-1c627383d75f
+
+ref cultureInfo en-US
+

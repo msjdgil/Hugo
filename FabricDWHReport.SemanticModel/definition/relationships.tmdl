@@ -1,0 +1,10 @@
+relationship 475c2769-6018-4528-b4b6-3ff57fde7109
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dwh_dimension_customer.ValidFrom
+	toColumn: LocalDateTable_64c1e089-32b4-484c-97ea-12bd8d22bacd.Date
+
+relationship 8d8edccd-da9a-41d9-9f6e-138dd14f462b
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dwh_dimension_customer.ValidTo
+	toColumn: LocalDateTable_beeee406-082d-4b54-9db5-1c627383d75f.Date
+
