@@ -12,4 +12,3 @@ CREATE TABLE [myscheme].[mytable] (
 	[ValidTo] datetime2(6) NULL, 
 	[LineageKey] int NULL
 );
-

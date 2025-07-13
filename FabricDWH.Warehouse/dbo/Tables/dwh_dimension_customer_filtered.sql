@@ -11,4 +11,3 @@ CREATE TABLE [dbo].[dwh_dimension_customer_filtered] (
 	[ValidTo] datetime2(6) NULL, 
 	[LineageKey] int NULL
 );
-
